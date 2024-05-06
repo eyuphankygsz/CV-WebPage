@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-weight: 500;
+
+    background-color: #1F1717;
+    color: white;
+    font-size: 42px;
+    text-align: center;
+    align-content: center;
+}
+
+.container {
+    width: 100%;
+    line-height: 100px;
+}
+
+#main {
+    margin: auto;
+    width: 90%;
+    display: grid;
+    height: 80%;
+    min-height: 600px;
+    max-height: 850px;
+    grid-template-columns: 10% 45% 45%;
+    grid-template-rows: 100%;
+}
+
+.buttons {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+#mainButtonBackground {
+    width: 100%;
+    height: 85%;
+    background-color: #811c28;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+#mainButtonHolder {
+    align-items: center;
+    text-align: center;
+    display: grid;
+    height: 100%;
+}
+#mainButtonHolder img{
+    margin-top: 5px;
+    width: 35px;
+}
+
+.mainButton {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ebf7f6;
+    background-color: #c23748;
+    margin: auto;
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.mainButton:hover {
+    font-size: 18px;
+    cursor: pointer;
+    color: #00d9ff;
+    background-color: #811c28;
+}
+#mainButtonHolder .mainButton:hover img {
+    width: 45px;
+}
+
+.mainButton:first-child {
+    border-top-left-radius: 10px;
+}
+
+.mainButton:last-child {
+    border-bottom-left-radius: 10px;
+}
+
+#mainButtonHolder hr {
+    border: none;
+}
+
+.content {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.contentBackground {
+    width: 100%;
+    height: 95%;
+    background-color: #525FE1;
+    border-radius: 5px;
+}
+
+.info {
+    align-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.infoBackground {
+    position: relative;
+    width: 100%;
+    height: 85%;
+    background-color: #F86F03;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
