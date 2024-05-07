@@ -13,19 +13,41 @@ const arrangeButtons = () => {
 };
 arrangeButtons();
 
-
-const changePage = (page) => {
-    const pageContent = document.querySelector(PAGE_CONTENT_SELECTOR);
-    console.log(page);
-    pageContent.replaceChild(selectPage(page),pageContent.children[0]);
-};
-const selectPage = (page) => {
-    const newPage = document.createElement("div");
-    newPage.classList.add(page);
-    return newPage;
-};
-
 const pages = ["whoAmI", "projects", "skills", "business", "why"];
+
+const copyDivHtml = (divName, classIndex) => {
+  const newDiv = document.createElement("div");
+  const oldDiv = document.querySelector("#" + pages[classIndex]);
+  const pageContent = document.querySelector("#pageContent");
+
+  newDiv.classList.add(pages[classIndex]);
+  newDiv.innerHTML = oldDiv.innerHTML;
+  newDiv.style.display = "none";
+  pageContent.appendChild(newDiv);
+  oldDiv.remove();
+
+  return newDiv;
+}
+const pageDivs = {
+    whoAmI: copyDivHtml("#whoAmI", 0),
+    projects: copyDivHtml("#projects", 1),
+    skills: copyDivHtml("#skills", 2),
+    business: copyDivHtml("#business", 3),
+    why: copyDivHtml("#why", 4)
+};
+
+let lastPage = "";
+const changePage = (page) => {
+  if(page != lastPage){
+    if(lastPage != "")
+    pageDivs[lastPage].style.display = "none";
+    pageDivs[page].style.display = "block";
+    lastPage = page;
+  }
+};
+changePage("whoAmI");
+
+
 
 let pi = 0;
 Array.from(buttonHolder.children).forEach((element, index) => {
@@ -34,3 +56,4 @@ Array.from(buttonHolder.children).forEach((element, index) => {
         element.addEventListener("click", () => changePage(pages[pageIndex]));
     }
 }); 
+

@@ -22,11 +22,11 @@ body {
 #main {
     margin: auto;
     width: 90%;
+    max-width: 1400px;
     display: grid;
-    height: 80%;
-    min-height: 600px;
-    max-height: 850px;
-    grid-template-columns: 10% 45% 45%;
+    min-height: 700px;
+
+    grid-template-columns: minmax(150px,100px) 50% 40%;
     grid-template-rows: 100%;
 }
 
@@ -99,8 +99,78 @@ body {
     height: 95%;
     background-color: #525FE1;
     border-radius: 5px;
+    align-content: center;
 }
 
+#pageContent{
+    margin: auto;
+    align-content: center;
+    width: 95%;
+    height: 95%;  
+    font-size: 16px;
+    line-height: 30px;
+}
+#whoAmI{
+    width: 100%;
+    height: 100%;
+}
+.profile{
+    margin: auto;
+    width: 100%;
+    max-width: 500px;
+    height: 100%;
+}
+.profile hr{
+    margin: auto;
+    width: 70%;
+    border-color: #ebf7f6;
+}
+.profile .pfp{
+    margin: auto;
+    width: 70%;
+    max-width: 300px;
+    height: 40%;
+}
+.profile .pfp img{
+    border: 2px solid white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+.profile .myName{
+    margin: auto;
+    text-align:center;
+    align-content: center;
+    height: 10%;
+    font-size: 26px;
+}
+.profile .social{
+    font-size: 10px;
+    line-height: 10px;
+    align-content: center;
+    height: 10%;
+    width: 70%;
+    margin: auto;
+}
+.profile .social img{
+    width: 30px;
+}
+.profile .stats{
+    margin: auto;
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    max-width: 400px;
+    text-align: left;
+    padding: 20px;
+    display: flex;
+}.profile .stats .part{
+    margin-left: 30px;
+    width: 50%;
+    height: 100%;
+}
 .info {
     align-content: center;
     width: 100%;
