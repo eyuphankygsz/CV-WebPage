@@ -4,90 +4,334 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
+    <div id="headline">
+      <p>Eyüphan Kaygusuz</p>
+    </div>
     <div class="container">
-        <p>Eyüphan Kaygusuz</p>
-        <div id="main">
+      <div id="main">
         <div class="buttons">
           <div id="mainButtonBackground">
             <div id="mainButtonHolder">
-                <button class="mainButton">
-                    <p>Who Am I?</p>
-                    <img src="./images/user.png" alt="me">
-                </button>
-                <hr>
-                <button class="mainButton">
-                    <p>My Projects</p>
-                    <img src="./images/project.png" alt="me">
-                </button>
-                <hr>
-                <button class="mainButton">
-                    <p>My Skills</p>
-                    <img src="./images/skills.png" alt="me">
-                </button>
-                <hr>
-                <button class="mainButton">
-                    <p>My Business Life</p>
-                    <img src="./images/business.png" alt="me">
-                </button>
-                <hr>
-                <button class="mainButton">
-                    <p>Why?</p>
-                    <img src="./images/why.png" alt="me">
-                </button>
+              <button class="mainButton">
+                <p>Who Am I?</p>
+                <img src="./images/user.png" alt="me" />
+              </button>
+              <hr />
+              <button class="mainButton">
+                <p>My Projects</p>
+                <img src="./images/project.png" alt="me" />
+              </button>
+              <hr />
+              <button class="mainButton">
+                <p>My Skills</p>
+                <img src="./images/skills.png" alt="me" />
+              </button>
+              <hr />
+              <button class="mainButton">
+                <p>My Business Life</p>
+                <img src="./images/business.png" alt="me" />
+              </button>
+              <hr />
+              <button class="mainButton">
+                <p>Why?</p>
+                <img src="./images/why.png" alt="me" />
+              </button>
             </div>
           </div>
         </div>
         <div class="content">
           <div class="contentBackground">
             <div id="pageContent">
-                <div id="whoAmI">
-                    <div class="profile">
-                      <div class="pfp">
-                        <img src="./images/me.jpeg" alt="img">
-                      </div>
-                      <div class="myName">
-                        <p>Eyüphan Kaygusuz</p>
-                      </div>
-                      <hr>
-                      <div class="social">
-                        <a href="#"><img src="./images/github.png" alt="GitHub"></a>
-                        <a href="#"><img src="./images/linkedin.png" alt="LinkedIn"></a>
-                        <a href="#"><img src="./images/instagram.png" alt="Instagram"></a>
-                        <a href="#"><img src="./images/youtube.png" alt="Youtube"></a>
-                      </div>
-                      <hr>
-                      <p>Abilities:</p>
-                      <div class="stats">
-                        <div class="part">
-                          <p>-Teamwork</p>
-                          <p>-Decision-Making Under Pressure</p>
-                          <p>-Communication Skills</p>
-                          <p>-Problem-Solving</p>
-                        </div>
-                        <div class="part">
-                          <p>-Adaptability</p>
-                          <p>-Time Management</p>
-                          <p>-Leadership</p>
-                          <p>-Efficient</p>
-                        </div>
-                      </div>
+              <div id="whoAmI" style="display: none">
+                <div class="profile">
+                  <div class="pfp">
+                    <img src="./images/me.jpeg" alt="img" />
+                  </div>
+                  <div class="myName">
+                    <p>Eyüphan Kaygusuz</p>
+                  </div>
+                  <hr />
+                  <div class="social">
+                    <a href="https://github.com/eyuphankygsz" target="_blank"
+                      ><img src="./images/github.png" alt="GitHub"
+                    /></a>
+                    <a
+                      href="https://www.linkedin.com/in/eyuphan-kaygusuz/"
+                      target="_blank"
+                      ><img src="./images/linkedin.png" alt="LinkedIn"
+                    /></a>
+                    <a
+                      href="https://www.instagram.com/gameofplay_studio/"
+                      target="_blank"
+                      ><img src="./images/instagram.png" alt="Instagram"
+                    /></a>
+                    <a
+                      href="https://www.youtube.com/@gameofplaystudio9856"
+                      target="_blank"
+                      ><img src="./images/youtube.png" alt="Youtube"
+                    /></a>
+                  </div>
+                  <hr />
+                  <p>Abilities:</p>
+                  <div class="stats">
+                    <div class="part">
+                      <p>-Teamwork</p>
+                      <p>-Decision-Making Under Pressure</p>
+                      <p>-Communication Skills</p>
+                      <p>-Problem-Solving</p>
                     </div>
+                    <div class="part">
+                      <p>-Adaptability</p>
+                      <p>-Time Management</p>
+                      <p>-Leadership</p>
+                      <p>-Efficient</p>
+                    </div>
+                  </div>
                 </div>
-                <div id="projects"></div>
-                <div id="skills"></div>
-                <div id="business"></div>
-                <div id="why"></div>
+              </div>
+              <div id="projects" style="display: none">
+                <div class="pageHeadline">
+                  <h1>Some Of My Works</h1>
+                </div>
+                <div id="projectContainer">
+                  <div class="project">
+                    <div class="projectImage">
+                      <img src="./images/projectImages/jumpiorwarrior.png" alt=""/>
+                    </div>
+                    <div class="projectExplain">
+                      <h4>Jumpior Warrior</h4>
+                      <p>
+                        A 2D game where you can collect golds and fight with
+                        enemies.
+                      </p>
+                    </div>
+                    <div class="projectButton">
+                      <a
+                        href="https://eyuphankaygusuz.wixsite.com/portfolyom/portfolio-collections/my-portfolio/jumpior-warrior"
+                        target="_blank"
+                        ><button>See More</button></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <div class="projectImage">
+                      <img
+                        src="./images/projectImages/pizzabreaker.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="projectExplain">
+                      <h4>Pizza Breaker</h4>
+                      <p>
+                        A 2D arcade block breaker game. PowerUPs and Combos
+                        included.
+                      </p>
+                    </div>
+                    <div class="projectButton">
+                      <a
+                        href="https://eyuphankaygusuz.wixsite.com/portfolyom/portfolio-collections/my-portfolio/pizzabreaker"
+                        target="_blank"
+                        ><button>See More</button></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <div class="projectImage">
+                      <img src="./images/projectImages/village.png" alt="" />
+                    </div>
+                    <div class="projectExplain">
+                      <h4>Village: The Dark Times</h4>
+                      <p>
+                        A 2D platformer, fight with enemies and solve puzzles!
+                      </p>
+                    </div>
+                    <div class="projectButton">
+                      <a
+                        href="https://eyuphankaygusuz.wixsite.com/portfolyom/portfolio-collections/my-portfolio/village-the-dark-times"
+                        target="_blank"
+                        ><button>See More</button></a
+                      >
+                    </div>
+                  </div>
+                  <div class="project">
+                    <div class="projectImage">
+                      <img
+                        src="./images/projectImages/punisherHasan.png"
+                        alt=""
+                      />
+                    </div>
+                    <div class="projectExplain">
+                      <h4>Punisher Hasan</h4>
+                      <p>
+                        A 2D decision game. Made within 48 hours. Listen to your
+                        folks and decide what to do.
+                      </p>
+                    </div>
+                    <div class="projectButton">
+                      <a
+                        href="https://eyuphankaygusuz.wixsite.com/portfolyom/portfolio-collections/my-portfolio/adsiz-proje"
+                        target="_blank"
+                        ><button>See More</button></a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div id="portfolioButton">
+                  <a
+                    href="https://eyuphankaygusuz.wixsite.com/portfolyom"
+                    target="_blank"
+                    ><button id="portfolioLink">Check My Portfolio</button></a
+                  >
+                </div>
+              </div>
+              <div id="skills" style="display: none">
+                <div class="pageHeadline">
+                  <h1>My Skills</h1>
+                </div>
+                <div id="skillContainer">
+                  <div class="skill">
+                    <img src="images/skills/csharp-original.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/cplusplus-original.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/c-original.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/java-original.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/unity.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/sqlServer.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/mysql.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/firebase.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/html.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/css.svg" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/javascript.svg" alt="" />
+                  </div>
+                </div>
+                <div class="pageHeadline">
+                  <h1>Also Had Experience With</h1>
+                </div>
+                <div id="skillContainer">
+                  <div class="skill">
+                    <img src="images/skills/unreal.png" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/python.png" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img src="images/skills/arduino.png" alt="" />
+                  </div>
+                  <div class="skill">
+                    <img
+                      src="images/skills/GameMaker-Studio-Logo1.jpg"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <div id="business" style="display: none">
+                <div class="pageHeadline">
+                  <h1>Experiences</h1>
+                </div>
+                <div id="businessContainer">
+                  <div class="business">
+                    <h2>Velo Game Studios</h2>
+                    <div class="businessExplain">
+                      <p>Unity Game Developer Intern</p>
+                      <p>(Jan 2024 - Now) · 5 months</p>
+                    </div>
+                  </div>
+                  <div class="business">
+                    <h2>SmartIR</h2>
+                    <div class="businessExplain">
+                      <p>Software Developer Intern</p>
+                      <p>1 month</p>
+                    </div>
+                  </div>
+                  <div class="business">
+                    <h2>Self-Employment</h2>
+                    <div class="businessExplain">
+                      <p>Unity Game Developer</p>
+                      <p>(Feb 2020 - Now) · 4 years</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div id="why" style="display: none">
+                <img src="./images/cool.jpg" alt="" />
+                <img src="./images/cool2.jpg" alt="" />
+                <h1>Because I'm so cool!</h1>
+              </div>
             </div>
           </div>
         </div>
         <div class="info">
           <div class="infoBackground">
+            <div id="whoInfo" style="display: none">
+              <div class="pageHeadline">
+                <h1 style="color: #321f11;">About Me</h1>
+              </div>
+              <div id="infoAbout">
+                <img src="./images/aboutMe/developer.png" alt="">
+                <p>First of all, I'm a Junior Unity Developer.</p><br>
+                <img src="./images/aboutMe/game.png" alt="">
+                <p>I am thrilled to gain experience in Game Development.</p><br>
+                <img src="./images/aboutMe/experience.png" alt="">
+                <p>I made many games so far and I got perfect experiences while working as a freelancer</p><br>
+                <img src="./images/aboutMe/market.png" alt="">
+                <p>I have uploaded some of my games to Google Play Store and Itch.io (the games I made in Game Jams)</p><br>              
+                <img src="./images/aboutMe/study.png" alt="">
+                <p>I am currently studying Computer Programming at Istanbul Aydin University.</p><br>
+                <img src="./images/aboutMe/global.png" alt="">
+                <p>I have B2 English and I'm still improving it!</p><br>
+              </div>
+            </div>
+            <div id="projectInfo" style="display: none">
+              <div class="pageHeadline">
+                <h1 style="color: #321f11;">About My Projects</h1>
+              </div>
+              <div id="infoAbout">
+                <img src="./images/aboutProjects/game.png" alt="">
+                <p>I use Unity to make games. However, I had some experiences with both Unreal and GameMaker Studio.</p><br>
+                <img src="./images/aboutProjects/pattern.png" alt="">
+                <p>I'm still learning about design patterns and use them in every new project.</p><br>
+                <img src="./images/aboutProjects/work.png" alt="">
+                <p>I currently working on Bullet Blitz and Texas Hold'em Poker games.</p><br>
+                <img src="./images/aboutProjects/scenario.png" alt="">
+                <p>I develop different game types so that I can experience different scenarios in each new project.</p><br>              
+                <img src="./images/aboutProjects/jam.png" alt="">
+                <p>I usually attend Game Jams to improve myself.</p><br>
+                <img src="./images/aboutProjects/portfolio.png" alt="">
+                <p>Don't forget to check my portfolio!</p><br>
+              </div>
+            </div>
+            <div id="skillInfo" style="display: none">anaibu</div>
+            <div id="businessInfo" style="display: none"></div>
+            <div id="whyInfo" style="display: none"></div>
           </div>
         </div>
       </div>
