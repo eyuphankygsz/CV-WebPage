@@ -32,6 +32,7 @@ body {
     max-width: 1400px;
     display: grid;
     min-height: 700px;
+    min-width: 220px;
     
     grid-template-columns: minmax(120px, 15%) minmax(400px, 45%) minmax(300px, 40%);
     grid-template-rows: 100%;
@@ -56,6 +57,8 @@ body {
     text-align: center;
     display: grid;
     height: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 2px 20% 2px 20% 2px 20% 2px 20%;
 }
 #mainButtonHolder img{
     transition: ease 0.5s;
@@ -174,7 +177,8 @@ body {
     text-align: left;
     padding: 20px;
     display: flex;
-}.profile .stats .part{
+}
+.profile .stats .part{
     margin-left: 30px;
     width: 50%;
     height: 100%;
@@ -347,7 +351,8 @@ body {
     height: 100%;
 }
 .info .pageHeadline{
-    
+    align-content: center;
+    font-size: 16px;
     height: 70px;
 }
 .info br{
@@ -356,6 +361,7 @@ body {
     height: 6px;
 }
 .infoBackground {
+    line-height: 30px;
     position: relative;
     width: 100%;
     height: 85%;
@@ -381,6 +387,193 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+/* MAX WIDTH 885 */
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 885px) {
+    body {
+        font-weight: 400;    
+        font-size: 36px;
+    }
+    #headline{
+        height: 100px;
+    }
+    
+    #main {
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+    }
+    
+    #mainButtonBackground {
+        height: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    
+    #mainButtonHolder {
+        grid-template-columns: auto 2px auto 2px auto 2px auto 2px auto;
+        grid-template-rows: 100%;
+    }
+    .mainButton p{
+        font-size: 12px;
+        font-weight: 600;
+    }
+    
+    .mainButton:hover {
+        font-size: 14px;
+    }
+    .mainButton:last-child {
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0px;
+    }
+    
+    .contentBackground {
+        height: 100%;
+    }
+    
+    #whoAmI{
+        margin-top: 60px;
+        min-height: 700px;
+    }
+    #projects {
+        line-height: 35px;
+        min-height: 650px;
+        height: 100%;
+        align-content: center;
+    }
+    .pageHeadline{
+        min-height: 50px;
+        font-size: 16px;
+    }
+    #projectContainer{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 230px 230px;
+    }
+    .project{
+        height: 100%;
+    }
+    .projectExplain{
+        min-height: 0px;
+    }
+    .projectExplain h4{
+        font-size: 13px;
+    }
+    .projectButton{
+        height: auto;
+    }
+    #portfolioButton{
+        margin-top: 10px;
+    }
+    
+    #skills {
+        min-height: 500px;
+    }
+    #business{
+        min-height: 450px;
+    }
+    
+    #why{
+        margin: auto;
+        min-height: 540px;
+        align-content: center;
+    }
+
+    .info br{
+        height: 4px;
+    }
+    .infoBackground {
+        height: 98%;
+        border-radius: 16px;
+        line-height: 30px;
+    }
+    #infoAbout img{
+        width: 38px;
+    }
+    #whoInfo{
+        min-height: 600px;
+    }
+    #projectInfo{
+        min-height: 620px;
+    }
+    #skillInfo{
+        min-height: 310px;
+    }
+    #businessInfo{
+        min-height: 490px;
+    }
+    #whyInfo{
+        min-height: 240px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MAX WIDTH 466PX*/
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 466px) {
+    
+    #whoAmI{
+        margin-top: 60px;
+        min-height: 600px;
+    }
+    .profile .stats p{
+        font-size: 10px;
+    }
+}
+@media only screen and (max-width: 320px) {
+    
+    #whoInfo{
+        min-height: 700px;
+    }
+    #projectInfo{
+        min-height: 700px;
+    }
+    #skillInfo{
+        min-height: 330px;
+    }
+    #businessInfo{
+        min-height: 560px;
+    }
+}
 
 
 
